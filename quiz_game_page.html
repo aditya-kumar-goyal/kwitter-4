@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>THE MATH QUIZ!</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+    <h4 id="player1_name"></h4> 
+    <span id="player1_score"></span>
+    <hr>
+    <h4 id="player2_name"></h4> 
+    <span id="player2_score"></span>
+    <hr>
+    <h3 id="question_turn"></h3>
+    <hr>
+    <h3 id="answer_turn"></h3>
+    <hr>
+    <div class="container">
+        <center>
+            <h2 style="color: rgb(255, 217, 0);">THE MATH QUIZ GAME!</h2>
+            <hr>
+            <div id="output">
+            </div>
+            <hr>
+            <label>Send You Number : <b style="color: red;">Try putting number which has one or two digit</b></label>
+            <br>
+            <hr>
+            <h4>Number 1</h4>
+            <input id="number1" type="number" class="form-cantrol" placeholder="Number 1">
+            <br>
+            <hr>
+            <h4>Number 2</h4>
+            <input id="number2" type="number" class="form-cantrol" placeholder="Number 2">
+            <hr>
+            <button style="width: 30%;" class="btn btn-success" onclick="send()">Send</button>
+            <hr>
+        </center>
+    </div>
+    
+    <script src="game_page.js"></script>
+    <script src="quiz_game_login.js"></script>
+</body>
